@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+}
+
+<h2>Contact</h2>
+
+<!-- College Form 2 -->
+<div class="col-sm-4 bg-info p-3">
+    <form method="post">
+        <div class="mb-3">
+            <label class="form-label">College Name</label>
+            <input type="text" class="form-control" name="CollegeName2Attribute" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">University Name</label>
+            <input type="text" class="form-control" name="UniversityName2Attribute" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">College Code</label>
+            <input type="text" class="form-control" name="CollegeCode2Attribute" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">College Address</label>
+            <textarea class="form-control" name="CollegeAddress2Attribute"></textarea>
+        </div>
+        <button type="submit" class="btn btn-warning w-100">Add College 2</button>
+    </form>
+</div>
+
+<p>@ViewBag.Html</p>

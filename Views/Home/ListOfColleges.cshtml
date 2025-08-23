@@ -1,0 +1,40 @@
+﻿@model System.Data.DataTable
+@{
+    ViewBag.Title = "ListOfColleges";
+}
+
+<h2>List Of Colleges</h2>
+<div class="container">
+    <div class="row d-grid justify-content-center">
+        <div class="col-sm-12 shadow-lg">
+                <table class="table table-bordered ">
+                    <thead class="table table-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>College Name</th>
+                            <th>University</th>
+                            <th>Code</th>
+                            <th>Address</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (System.Data.DataRow row in Model.Rows)
+                        {
+                            <tr>
+                                <td>@row["Id"]</td>
+                                <td>@row["CollegeName"]</td>
+                                <td>@row["UniversityName"]</td>
+                                <td>@row["CollegeCode"]</td>
+                                <td>@row["CollegeAddress"]</td>
+                                <td> <a class=" btn btn-outline-primary" href="/Home/GetElemetById?ID=@row["Id"]">Edit</a> <a class="btn btn-outline-danger" href="/Home/DeleteElemetById?ID=@row["Id"]">Delete</a></td>
+                            </tr>
+                        }
+                    </tbody>
+
+                    
+                </table>
+            </div>
+        </div>
+    </div>
+

@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "About";
+}
+
+<h2>About</h2>
+
+<!-- College Form 1 -->
+<div class="col-sm-4 bg-dark text-white p-3">
+    <form method="post">
+        <div class="mb-3">
+            <label class="form-label">College Name</label>
+            <input type="text" class="form-control" name="CollegeName1Attribute" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">University Name</label>
+            <input type="text" class="form-control" name="UniversityName1Attribute" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">College Code</label>
+            <input type="text" class="form-control" name="CollegeCode1Attribute" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">College Address</label>
+            <textarea class="form-control" name="CollegeAddress1Attribute"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Add College 1</button>
+    </form>
+</div>
+
+<p>@ViewBag.Html</p>

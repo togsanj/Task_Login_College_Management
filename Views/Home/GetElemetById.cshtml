@@ -1,0 +1,30 @@
+﻿@model System.Data.DataRow
+@{
+    ViewBag.Title = "GetElemetById";
+}
+
+<h2>GetElemetById</h2>
+
+
+<div class="col-sm-4 bg-dark text-white p-3">
+    <form method="post">
+        <input type="number" hidden name="IDAttribute" value="@Model["Id"]" />
+        <div class="mb-3">
+            <label class="form-label">College Name</label>
+            <input type="text" class="form-control" name="CollegeName1Attribute" value="@Model["CollegeName"]" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">University Name</label>
+            <input type="text" class="form-control" name="UniversityName1Attribute" value="@Model["UniversityName"]" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">College Code</label>
+            <input type="text" class="form-control" name="CollegeCode1Attribute" value="@Model["CollegeCode"]" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">College Address</label>
+            <textarea class="form-control" name="CollegeAddress1Attribute">"@Model["CollegeAddress"]" </textarea>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Add College</button>
+    </form>
+</div>
